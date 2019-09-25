@@ -24,9 +24,13 @@ precipitation 	|float 		|142.2 							|in mm
 
 # REST API
 The following is an overview of the REST endpoints your solution must expose.
+
 Method 	> Path 						> Request Body 	> Response Body
+
 POST 	|/measurements 				|Measurement 	|(none)
+
 GET 	|/measurements/:timestamp 	|(none) 		|Measurement
+
 GET 	|/stats 					|(none) 		|Statistic[]
 
 The /stats endpoint accepts query parameters for its request. These parameters are:
