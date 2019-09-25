@@ -17,10 +17,10 @@ The instruments plugged into the Raspberry Pi will always report their metrics a
 On day one, Sarah has installed instruments that report the following metrics. Keep in mind that she may install new ones in the future.
 <table>
     <tr>
-        <td>*Metric Name*</td>
-		<td>*Type*</td>
-		<td>*Example*</td>
-		<td>*Notes*</td>
+        <td>**Metric Name**</td>
+		<td>**Type**</td>
+		<td>**Example**</td>
+		<td>**Notes**</td>
     </tr>
 	<tr>
         <td>timestamp</td>
@@ -28,13 +28,31 @@ On day one, Sarah has installed instruments that report the following metrics. K
 		<td>"2015-09-01T16:00:00.000Z"</td>
 		<td>Always sent as an ISO-8061 string in UTC</td>
     </tr>
+	<tr>
+        <td>temperature</td>
+		<td>float</td>
+		<td>22.4</td>
+		<td>in ° C</td>
+    </tr>
+	<tr>
+        <td>dewPoint</td>
+		<td>float</td>
+		<td>18.6</td>
+		<td>in ° C</td>
+    </tr>
+	<tr>
+        <td>precipitation</td>
+		<td>float</td>
+		<td>142.2</td>
+		<td>in mm</td>
+    </tr>
+	<tr>
+        <td>...etc</td>
+		<td>float</td>
+		<td>1234.56</td>
+		<td>Interpretation depends on instrument</td>
+    </tr>
 </table>
-Metric Name 	|Type 		|Example 						|Notes
- 	    | 	| 	|
-temperature 	|float 		|22.4 							|in ° C
-dewPoint 		|float 		|18.6 							|in ° C
-precipitation 	|float 		|142.2 							|in mm
-...etc 			|float 		|1234.56 						|Interpretation depends on instrument
 
 # REST API
 The following is an overview of the REST endpoints your solution must expose.
