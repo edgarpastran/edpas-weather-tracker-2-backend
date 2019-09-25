@@ -26,7 +26,6 @@ Feature: Get a measurement
     When I get a measurement for "2015-09-01T16:50:00.000Z"
     Then the response has a status code of 404
     
-  @new
   Scenario: Get a measurement with invalid timestamp
     # GET /measurements/2015-13-32T16:00:00.000Z
     When I try to get a measurement for "2015-13-32T16:00:00.000Z" (note that the month is 13 and the day is 32)

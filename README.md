@@ -89,7 +89,7 @@ The following is an overview of the REST endpoints your solution must expose.
     </tr>
 </table>
 
-The /stats endpoint accepts query parameters for its request. These parameters are:
+The __/stats__ endpoint accepts query parameters for its request. These parameters are:
 <table>
     <tr>
         <th>Parameter</td>

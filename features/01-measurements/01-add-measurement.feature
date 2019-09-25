@@ -24,7 +24,6 @@ Feature: Add a measurement
       | 27.1        | 20       | 0             |
     Then the response has a status code of 400
     
-  @new
   Scenario: Cannot add a measurement with invalid timestamp
     # POST /measurements
     When I submit a new measurement as follows: (note that the month is 13 and the day is 32)
@@ -32,7 +31,6 @@ Feature: Add a measurement
       | "2015-13-32T16:00:00.000Z" | 27.1           | 16.7     | 0             |
     Then the response has a status code of 400
 	
-  @new
   Scenario: Add measurement in batch with valid (numeric) values
     # POST /measurements/batch
     When I submit a new set of measurements as follows:
