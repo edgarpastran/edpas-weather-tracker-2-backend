@@ -15,6 +15,20 @@ As time goes on, Sarah will buy new instruments to plug into her Raspberry Pi. F
 The instruments plugged into the Raspberry Pi will always report their metrics as floating-point numbers. This includes instruments that have not been plugged in yet.
 
 On day one, Sarah has installed instruments that report the following metrics. Keep in mind that she may install new ones in the future.
+<table>
+    <tr>
+        <td>Metric Name</td>
+		<td>Type</td>
+		<td>Example</td>
+		<td>Notes</td>
+    </tr>
+	<tr>
+        <td>Metric Name</td>
+		<td>Type</td>
+		<td>Example</td>
+		<td>Notes</td>
+    </tr>
+</table>
 Metric Name 	|Type 		|Example 						|Notes
 timestamp 	    |DateTime 	|"2015-09-01T16:00:00.000Z" 	|Always sent as an ISO-8061 string in UTC
 temperature 	|float 		|22.4 							|in ° C
