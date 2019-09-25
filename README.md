@@ -56,21 +56,67 @@ On day one, Sarah has installed instruments that report the following metrics. K
 
 # REST API
 The following is an overview of the REST endpoints your solution must expose.
-
-Method 	> Path 						> Request Body 	> Response Body
-
-POST 	|/measurements 				|Measurement 	|(none)
-
-GET 	|/measurements/:timestamp 	|(none) 		|Measurement
-
-GET 	|/stats 					|(none) 		|Statistic[]
+<table>
+    <tr>
+        <th>Method</td>
+		<th>Path</td>
+		<th>Request Body</td>
+		<th>Response Body</td>
+    </tr>
+	<tr>
+        <td>POST</td>
+		<td>/measurements</td>
+		<td>Measurement</td>
+		<td>(none)</td>
+    </tr>
+	<tr>
+        <td>POST</td>
+		<td>/measurements/batch</td>
+		<td>Measurement[]</td>
+		<td>(none)</td>
+    </tr>
+	<tr>
+        <td>GET</td>
+		<td>/measurements/:timestamp</td>
+		<td>(none)</td>
+		<td>Measurement</td>
+    </tr>
+	<tr>
+        <td>GET</td>
+		<td>/stats</td>
+		<td>(none)</td>
+		<td>Statistic[]</td>
+    </tr>
+</table>
 
 The /stats endpoint accepts query parameters for its request. These parameters are:
-Parameter 	|Indicates 											|Notes
-stat 		|which statistic to compute 						|can be repeated for more than one statistic
-metric 		|which metric to compute the statistics for 		|can be repeated for more than one metric
-fromDateTime|the inclusive minimum date and time of the range 	|in UTC, ISO-8061 format
-toDateTime 	|the exclusive maximum date and time of the range 	|in UTC, ISO-8061 format
+<table>
+    <tr>
+        <th>Parameter</td>
+		<th>Indicates</td>
+		<th>Notes</td>
+    </tr>
+	<tr>
+        <td>stat</td>
+		<td>which statistic to compute</td>
+		<td>can be repeated for more than one statistic</td>
+    </tr>
+	<tr>
+        <td>metric</td>
+		<td>which metric to compute the statistics for</td>
+		<td>can be repeated for more than one metric</td>
+    </tr>
+	<tr>
+        <td>fromDateTime</td>
+		<td>the inclusive minimum date and time of the range</td>
+		<td>in UTC, ISO-8061 format</td>
+    </tr>
+	<tr>
+        <td>toDateTime</td>
+		<td>the exclusive maximum date and time of the range</td>
+		<td>in UTC, ISO-8061 format</td>
+    </tr>
+</table>
 
 # Acceptance Tests
-The acceptance tests (ATs) found in features/**/*.feature.
+The acceptance tests (ATs) found in ** features/**/*.feature. **
