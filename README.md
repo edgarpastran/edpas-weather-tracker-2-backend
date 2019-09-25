@@ -119,4 +119,4 @@ The /stats endpoint accepts query parameters for its request. These parameters a
 </table>
 
 # Acceptance Tests
-The acceptance tests (ATs) found in ** features/**/*.feature. **
+The acceptance tests (ATs) found in __features/**/*.feature__.
