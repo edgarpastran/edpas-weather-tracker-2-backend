@@ -1,4 +1,4 @@
-# Weather Tracker
+# Weather Tracker (Version 2)
 
 Sarah is interested in tracking weather conditions in her garden. To accomplish this, she has set up some weather instruments connected to a Raspberry Pi that makes HTTP calls from time to time with various metrics.
 Assumptions
