@@ -16,12 +16,12 @@ The instruments plugged into the Raspberry Pi will always report their metrics a
 
 On day one, Sarah has installed instruments that report the following metrics. Keep in mind that she may install new ones in the future.
 <table>
-    <th>
-        <td>**Metric Name**</td>
-		<td>**Type**</td>
-		<td>**Example**</td>
-		<td>**Notes**</td>
-    </th>
+    <tr>
+        <th>Metric Name</td>
+		<th>Type</td>
+		<th>Example</td>
+		<th>Notes</td>
+    </tr>
 	<tr>
         <td>timestamp</td>
 		<td>DateTime</td>
