@@ -1,4 +1,4 @@
-#Weather Tracker
+# Weather Tracker
 
 Sarah is interested in tracking weather conditions in her garden. To accomplish this, she has set up some weather instruments connected to a Raspberry Pi that makes HTTP calls from time to time with various metrics.
 Assumptions
@@ -22,7 +22,7 @@ dewPoint 		|float 		|18.6 							|in ° C
 precipitation 	|float 		|142.2 							|in mm
 ...etc 			|float 		|1234.56 						|Interpretation depends on instrument
 
-#REST API
+# REST API
 The following is an overview of the REST endpoints your solution must expose.
 Method 	|Path 						|Request Body 	|Response Body
 POST 	|/measurements 				|Measurement 	|(none)
@@ -36,5 +36,5 @@ metric 		|which metric to compute the statistics for 		|can be repeated for more
 fromDateTime|the inclusive minimum date and time of the range 	|in UTC, ISO-8061 format
 toDateTime 	|the exclusive maximum date and time of the range 	|in UTC, ISO-8061 format
 
-#Acceptance Tests
+# Acceptance Tests
 The acceptance tests (ATs) found in features/**/*.feature.
